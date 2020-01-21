@@ -1,4 +1,5 @@
 ﻿using System;
+using WorkingWithMaps.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,8 @@ namespace WorkingWithMaps
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MostrarUnPin());
+            //MainPage = new MainPage();
         }
 
         protected override void OnStart()
