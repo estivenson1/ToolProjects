@@ -16,5 +16,11 @@ namespace WorkingWithMaps.Views
         {
             InitializeComponent();
         }
+
+        private async void map_MapClicked(object sender, Xamarin.Forms.Maps.MapClickedEventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine($"MapClick: {e.Position.Latitude}, {e.Position.Longitude}");
+           await DisplayAlert("Información", $"MapClick: {e.Position.Latitude}, {e.Position.Longitude}","Aceptar");
+        }
     }
 }
