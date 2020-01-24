@@ -25,10 +25,10 @@
                  </x:Arguments>
              </maps:MapSpan>
          </x:Arguments>
-         <maps:Map.Pins>
+         <maps:Map.Pins >
              <maps:Pin Label="Santa Cruz"
                        Address="The city with a boardwalk"
-                       Type="Place">
+                       Type="Place" MarkerClicked="Pin_MarkerClicked" InfoWindowClicked="Pin_InfoWindowClicked">
                  <maps:Pin.Position>
                      <maps:Position>
                          <x:Arguments>
